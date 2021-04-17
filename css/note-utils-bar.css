@@ -1,0 +1,54 @@
+.utils {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  background-color: rgba(110, 108, 108, 0.197);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 -10px 40px -17px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.utils-expend {
+  position: sticky;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: #f77fbf;
+}
+
+.utils i {
+  color: rgba(0, 0, 0, 0.265) !important;
+}
+
+.utils i:hover {
+  color: rgba(0, 0, 0, 0.802) !important;
+  cursor: pointer;
+}
+
+.utils.active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.color-picker {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  top: -95px;
+  left: 100px;
+  height: 80px;
+  width: 120px;
+  background-color: white;
+  box-shadow: 0 0 10px rgb(49, 49, 49);
+  visibility: hidden;
+}

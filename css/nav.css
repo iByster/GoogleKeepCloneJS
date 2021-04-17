@@ -1,0 +1,157 @@
+@font-face {
+  font-family: logoFont;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  grid-area: menu;
+  display: grid;
+  grid-template-columns: 40px 150px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  margin-left: 20px;
+  width: 190px;
+}
+
+#menu.active {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#menu a {
+  margin-top: 20px;
+  width: 200px;
+}
+
+#menu p {
+  font-family: logoFont;
+}
+
+nav {
+  width: 100%;
+}
+
+/* .search {
+    box-sizing: border-box;
+    margin-left: 150px;
+    width: 450px;
+    height: 28px;
+    border-radius: 4px;
+    padding: 5px;
+    border: none;
+    background-color: #f1f3f4;
+  } */
+
+.top-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #edeff0;
+  text-align: center;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.app-name {
+  font-family: logoFont;
+  font-size: 1.3em;
+  margin-right: 150px;
+}
+
+input[type="text"] {
+  padding: 8px 7px 10px 7px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 86%;
+  background-color: #ddd;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.fa.fa-search::before {
+  font-size: 15px;
+}
+
+.search-container {
+  width: 600px;
+}
+
+.search-container button {
+  float: right;
+  padding: 2px 4px;
+  margin-top: 8px;
+  margin-right: 8px;
+  background: #ddd;
+  font-size: 7px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+@media only screen and (max-width: 997px) {
+  .search-container {
+    width: 400px;
+  }
+
+  input[type="text"] {
+    width: 79%;
+  }
+}
+
+@media only screen and (max-width: 796px) {
+  .app-name {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 745px) {
+  .app-name {
+    margin-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 716px) {
+  .app-name {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .top-bar {
+    height: 120px;
+    margin-top: 10px;
+  }
+  .search-container {
+    flex-grow: 3;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 396px) {
+  .search-container {
+    width: 200px;
+  }
+  input[type="text"] {
+    width: 75%;
+  }
+}

@@ -1,0 +1,110 @@
+@keyframes slidein {
+  from {
+    top: 0;
+    opacity: 0.2;
+    height: 0;
+    margin-top: 0;
+  }
+
+  to {
+    top: 80px;
+    height: 250px;
+    opacity: 1;
+    margin-top: 100px;
+  }
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 23px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  z-index: 10;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 22px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+.overlay {
+  position: absolute;
+  height: 1000vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.823);
+  z-index: 4;
+
+  display: none;
+}
+
+.note-extended {
+  position: sticky;
+  top: 80px;
+  width: 700px;
+  min-height: 0;
+  max-height: 550px;
+  z-index: 5;
+  margin: 100px auto;
+  animation-duration: 1s;
+  animation-name: slidein;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  padding: 0;
+}
+
+.note-extended h2 {
+  top: 0;
+  position: sticky;
+  padding: 25px;
+}
+
+.note-extended p {
+  padding: 0 25px;
+}
+
+.color-picker-extend {
+  left: 350px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container i {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  background-color: rgba(51, 51, 51, 0.517);
+  text-align: center;
+}
+
+.image-container-addnote i {
+  right: 90px;
+  bottom: 0;
+}
+
+.trashbin-container {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .note-extended {
+    width: 90%;
+  }
+}

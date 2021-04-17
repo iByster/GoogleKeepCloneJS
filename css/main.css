@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: logoFont;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.note-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+
+  padding: 0 10px 10px 0 0px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@font-face {
+  font-family: robotoThin;
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+
+.section-headers {
+  margin-left: 220px;
+  margin-bottom: 25px;
+  text-decoration: underline;
+  color: #5f6368;
+}
+
+/* .flex-box-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 550px;
+  width: 800px;
+  margin: 0 auto;
+} */

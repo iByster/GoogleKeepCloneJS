@@ -1,0 +1,92 @@
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+[data-note-header]:empty:not(:focus):before {
+  content: attr(data-note-header);
+  color: #909598ba;
+  font-size: 18px;
+}
+
+[data-note-text]:empty:not(:focus):before {
+  content: attr(data-note-text);
+  color: #909598ba;
+}
+
+#take-a-note {
+  width: 100%;
+  padding: 20px 0;
+}
+
+#note-input h3 {
+  font-weight: 1px;
+  width: 90%;
+}
+
+#note-input p {
+  font-size: 0.9em;
+}
+
+#note-input img {
+  width: 200px;
+  margin-bottom: 15px;
+}
+#note-input {
+  position: relative;
+  width: 30%;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 15px;
+  word-wrap: break-word;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+}
+.color-picker-add-note {
+  left: -20px;
+  top: 40px;
+  z-index: 10;
+}
+
+.close-add-note {
+  top: 16px !important;
+}
+
+.utils-add-note {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.utils-add-note i {
+  width: 20px;
+  color: rgba(0, 0, 0, 0.265);
+}
+
+.utils-add-note i:hover {
+  color: rgba(0, 0, 0, 0.802);
+  cursor: pointer;
+}
+
+.utils-add-note i::before {
+  font-size: 20px;
+}
+
+.add-button {
+  width: 55px;
+  height: 25px;
+  margin-top: 6px;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 5px;
+  background-color: rgba(167, 167, 167, 0.265);
+}
+
+.add-button:hover {
+  background-color: rgba(117, 117, 117, 0.265);
+}
