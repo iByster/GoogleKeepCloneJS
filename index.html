@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Keep</title>
+
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+    <link rel="stylesheet" href="css/note.css" />
+    <link rel="stylesheet" href="css/note-utils-bar.css" />
+    <link rel="stylesheet" href="css/add-new-note.css" />
+    <link rel="stylesheet" href="css/expended-note.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="overlay" data-overlay></div>
+    <nav>
+      <div class="top-bar">
+        <div id="hamburger-icon">
+          <i class="fa fa-bars nav-item"></i>
+        </div>
+        <div class="logo nav-item">
+          <img src="images/logo.png" alt="" />
+        </div>
+        <a href="" class="app-name nav-item">MyKeep</a>
+
+        <form class="search-container">
+          <input type="text" placeholder="Search.." id="search" />
+          <button type="button" data-submit>
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <main class="container">
+      <div id="take-a-note">
+        <div id="note-input">
+          <h3 contenteditable="true" data-note-header="Take a note..."></h3>
+        </div>
+      </div>
+      <section>
+        <div id="pinded-work-board" class="note-container"></div>
+      </section>
+      <section>
+        <div id="work-board" class="note-container"></div>
+      </section>
+      <div id="menu">
+        <div>
+          <a href="#notes">
+            <i class="fa fa-lightbulb-o"></i>
+          </a>
+        </div>
+        <div class="icon-extend">
+          <p>Note</p>
+        </div>
+        <div>
+          <a href="#momentos" disabled><i class="fa fa-bell"></i></a>
+        </div>
+        <div class="icon-extend">
+          <p>Momentouri</p>
+        </div>
+        <div>
+          <a href="#edits"><i class="fa fa-pencil"></i></a>
+        </div>
+        <div class="icon-extend">
+          <p>Editati etichetele</p>
+        </div>
+        <div>
+          <a href="#arhive"><i class="fa fa-download"></i></a>
+        </div>
+        <div class="icon-extend">
+          <p>Arhiva</p>
+        </div>
+        <div>
+          <a href="#bin"><i class="fa fa-trash-o"></i></a>
+        </div>
+        <div class="icon-extend">
+          <p>Cos de gunoi</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/nav.js"></script>
+    <script src="js/add-note.js"></script>
+    <script src="js/note-expanded.js"></script>
+    <script src="js/note.js"></script>
+    <script src="js/crudNotes.js"></script>
+    <script src="js/note-utils.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
